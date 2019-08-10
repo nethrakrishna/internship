@@ -1,0 +1,250 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.tablink:hover {
+  background-color: #777;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+#Sweet {background-color:red;}
+#Spicy {background-color:green;}
+#Bitter {background-color:blue;}
+#Sour {background-color:orange;}
+</style>
+
+<div class="main">
+<header class="page-header">
+<h1 style=color:red>FOOD</h1>
+<h2 style=color:pink>DIFFERENT VARIETY OF FOODS:</h2>
+<h3 style=color:magenta>THE BASIC NEED FOR ALL</h3>
+<h4 style=color:darkblue>VARIETIES AVAILABLE AROUND THE WORLD</h4>
+<h5 style=color:purple>FOOD WITH DIFFERENT TASTES: </h5>
+<h6>SWEET|SPICY|SOUR|BITTER</h6>
+<hr>
+</header>
+
+
+<body>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div id="Sweet" class="tabcontent">
+  <h1>Sweet</h1>
+  <p>“Desserts are the fairytales of the kitchen,a happily ever after to supper”</p>
+</div>
+
+<div id="Spicy" class="tabcontent">
+  <h1>Spicy</h1>
+  <p>A good spicy challenge strikes a balance between flavour and fear.</p> 
+</div>
+
+<div id="Bitter" class="tabcontent">
+  <h1>Bitter</h1>
+  <p>If there were no night, we would not appreciate the day, nor could we see the stars and the vastness of the heavens. We must partake of the bitter with the sweet.</p>
+</div>
+
+<div id="Sour" class="tabcontent">
+  <h1>Sour</h1>
+  <p>Attitude is as sour as vinegar making it difficult to keep friends.</p>
+</div>
+
+<button class="tablink" onclick="openCity('Sweet', this, 'red')" id="defaultOpen">Sweet</button>
+<button class="tablink" onclick="openCity('Spicy', this, 'green')">Spicy</button>
+<button class="tablink" onclick="openCity('Bitter', this, 'blue')">Bitter</button>
+<button class="tablink" onclick="openCity('Sour', this, 'orange')">Sour</button>
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<main>
+    <p>I Love Food.<em>It's</em> what people and animals eat to survive.Food contains the nutrition that people and animals need to be healthy.</p>
+<p>Glucose is a simple sugar with molecular formula
+C<sub>6</sub>H<sub>12</sub>0<sub>6</sub>,also called as "dextrose",a subcategory of carbohydrates.</p>
+<p><b>To prepare chocolate chip cookies:</b></p>
+
+ <var>2<sup>1/4th</sup>cups all purpose baking flour is used,3/4<sup>th</sup>cup Granulated Sugar,and 3/4<sup>th</sup>cup Brown Sugar.</var></p>  
+<p>“Tasty!”</p>
+<del>
+    <p>“Bread and butter.”</p>
+</del>
+<ins cite="../howtobeawizard.html" datetime="2018-05">
+    <p>“Did I hear FOOD…”</p>
+</ins>
+<blockquote>
+    Eating good food is, to me, one of life's <del>greatest joys</del> ,and I will <ins>never punish myself</ins> for it.One <del>cannot</del> <ins>think well, love well and sleep well</ins> if one has not dined well.
+</blockquote>
+<div class="warning">
+    <img src="download.jpg"
+         alt="An intimidating leopard.">
+    <p>Yummy Food!!</p>
+</div>
+
+<span style="background-color:powderblue;"> 
+       Proteins</span> 
+      <span style="background-color: lightgray;"> 
+      -Fruits-</span> 
+      <span style="background-color: yellow;"> 
+      Vegetables</span> 
+      <span style="background-color: lightgreen;"> 
+    Grains</span>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Calories</th>
+  </tr>
+  <tr>
+    <td>Chicken</td>
+    <td>1 Cup</td>
+    <td>220</td>
+  </tr>
+  <tr>
+    <td>Chapathi</td>
+    <td>1 Piece</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Gulab Jamun </td>
+    <td>1 Piece</td>
+    <td>100</td>
+  </tr>
+</table>
+
+
+<form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div class="form-example">
+    <label for="email">Enter your email: </label>
+    <input type="email" name="email" id="email" required>
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Subscribe!">
+  </div>
+</form>
+
+
+<form> 
+        SELECT TASTE: 
+        <br> 
+        <input type="radio" name="gender" id="male"> 
+        <label for="male">SWEET</label><br> 
+        <input type="radio" name="gender" id="female"> 
+        <label for="female">SPICY</label> <br>
+<input type="radio" name="gender" id="female"> 
+        <label for="female">BITTER</label><br>
+<input type="radio" name="gender" id="female"> 
+        <label for="female">SOUR</label><br>
+    </form> 
+
+A balanced diet is made up of the five food groups:
+<ul><li>Carbohydrates.</li>
+    <li> Protein.</li>
+    <li>Milk and dairy products.</li>
+<li>Fruit and vegetables.</li>
+<li>Fats and sugars.</li></ul> 
+
+The five food groups are:
+<ol>
+    <li>vegetables and legumes/beans.</li>
+    <li>fruit.</li>
+    <li>lean meats and poultry, fish, eggs, tofu, nuts and seeds.</li>
+ <li>grain (cereal) foods, mostly wholegrain and/or high cereal fibre varieties.</li>
+    <li>milk, yoghurt, cheese and/or alternatives, mostly reduced fat.</li>
+</ol>
+
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</div>
+</div>
+
+<footer>
+<hr>
+<p style=color:black;font:bold;text-align:center;background-color:skyblue;margin:35;> THANK YOU</p>
+</footer>  
+</article>
+
+</body>
+</html>
